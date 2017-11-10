@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-
 from libRadius import *
 import datetime
 import time
@@ -100,14 +99,18 @@ if __name__ == '__main__':
     _port=1812
     _radiusDict='dictRadius.xml'
     _calling_station_id="pyEapol_test"
-    _called_station_id="guest.unical.it"
+    _called_station_id="guest.eduroam.eu"
     _msg_size=4096
     _timeout=15
     _nas_port_type=5
     _nas_port=6000
     _nas_identifier="ThatNAS"
     
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description='Usage:\n'
+                                     'python EapolClient.py '
+                                     '-u UserLogin'
+                                     '-p UserPassword'
+                                     '-s ServerSecret')
     parser.add_argument('-u', required=True, help="radius radcheck username")
     parser.add_argument('-p', required=True, help="radius radcheck password")
     parser.add_argument('-s', required=True, help="radius client secret")
