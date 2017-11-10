@@ -1,7 +1,7 @@
 pyEapol_test is a Pure Python implementation of a eapol_test client.
 
 It doesn't need any dependencies to work.
-A very special thanks to Sergej Srepfler <sergej.srepfler@gmail.com> for his libRadius lib, the client is based on it.
+A very special thanks goes to Sergej Srepfler <sergej.srepfler@gmail.com> for libRadius lib, this client is based on it.
 
 To use pyEapol_test you should simply download this repository and then run in its directory:
 
