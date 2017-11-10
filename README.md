@@ -1,4 +1,4 @@
-#pyEapol_test 
+pyEapol_test 
 
 Is a Pure Python implementation of a eapol_test client.
 
