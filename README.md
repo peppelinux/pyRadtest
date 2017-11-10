@@ -6,7 +6,7 @@ A very special thanks goes to Sergej Srepfler <sergej.srepfler@gmail.com> for li
 To use pyEapol_test you should simply download this repository and then run in its directory:
 
 ````
-Usage: python EapolClient.py -u UserLogin-p UserPassword-s ServerSecret
+Usage: python EapolClient.py -u UserLogin -p UserPassword-s ServerSecret
 
 optional arguments:
   -h, --help            show this help message and exit
