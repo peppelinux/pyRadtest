@@ -1,14 +1,13 @@
-# pyEapol_test
-## A Pure Python implementation of an eapol_test client
+# pyRadtest
+## A Pure Python implementation of a Radius authentication client
 
-It doesn't need any dependencies to work, this means that we would not download wpa_supplicant and compile it with eapol_test support to test our PEAP auth session in Radius, anymore. The only thing needed is python.
-
+It doesn't need any dependencies to work, the only thing needed is python.
 A very special thanks goes also to Sergej Srepfler <sergej.srepfler@gmail.com> for libRadius lib, this client is based on it.
 
-To use pyEapol_test you should simply download this repository and then run in its directory:
+To use pyRadtest you should simply download this repository and then run in its directory:
 
 ````
-Usage: python EapolClient.py -u UserLogin -p UserPassword -s ServerSecret
+Usage: python pyRadtest.py -u UserLogin -p UserPassword -s ServerSecret
 
 optional arguments:
   -h, --help            show this help message and exit
