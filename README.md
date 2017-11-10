@@ -1,6 +1,5 @@
-pyEapol_test 
-
-Is a Pure Python implementation of a eapol_test client.
+# pyEapol_test
+## A Pure Python implementation of a eapol_test client
 
 It doesn't need any dependencies to work, this means that we would not download wpa_supplicant and compile it with eapol_test support to test our PEAP auth session in Radius, anymore. The only thing needed is python.
 
