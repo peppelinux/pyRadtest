@@ -7,7 +7,7 @@ import socket
 #logging.basicConfig(level=logging.DEBUG)
 logging.basicConfig(level=logging.INFO)
 
-class EapolClient(object):
+class Radtest(object):
     def __init__(self, username, password, secret, host='127.0.0.1', 
                  port=1812, radiusDict='dictRadius.xml', 
                  calling_station_id="00381123456", called_station_id='mms',
@@ -64,7 +64,7 @@ class EapolClient(object):
         # socket is in blocking mode, so let's add a timeout
         self.conn.settimeout(self.timeout)
 
-    def eapol_test(self):
+    def run(self):
         self.create_request()
         self.create_socket()
 
@@ -98,7 +98,7 @@ if __name__ == '__main__':
     _host='127.0.0.1'
     _port=1812
     _radiusDict='dictRadius.xml'
-    _calling_station_id="pyEapol_test"
+    _calling_station_id="pyRadtest"
     _called_station_id="guest.eduroam.eu"
     _msg_size=4096
     _timeout=15
@@ -143,7 +143,7 @@ if __name__ == '__main__':
     
     args = parser.parse_args()
     
-    eapol_test = EapolClient(
+    radtest = Radtest(
                              args.u, args.p, args.s,
                              host=args.host, 
                              port=args.port,
@@ -156,4 +156,4 @@ if __name__ == '__main__':
                              nas_port_type=args.nas_port_type,
                              nas_identifier=_nas_identifier,
                             )
-    eapol_test.eapol_test()
+    radtest.run()
