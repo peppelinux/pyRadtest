@@ -140,6 +140,9 @@ if __name__ == '__main__':
     parser.add_argument('-nas_port_type', type=int, default=_nas_port_type,
                                           required=False, 
                                           help="NAS port type. Default 5")
+    parser.add_argument('-nas_identifier', required=False, 
+                                           default=_nas_identifier, 
+                                           help="NAS-Identifier")
     
     args = parser.parse_args()
     
@@ -154,6 +157,6 @@ if __name__ == '__main__':
                              timeout=args.t,
                              nas_port=args.nas_port,
                              nas_port_type=args.nas_port_type,
-                             nas_identifier=_nas_identifier,
+                             nas_identifier=args.nas_identifier,
                             )
     radtest.run()

@@ -25,4 +25,6 @@ optional arguments:
   -nas_port NAS_PORT    NAS port. Default 6000
   -nas_port_type NAS_PORT_TYPE
                         NAS port type. Default 5
+  -nas_identifier NAS_IDENTIFIER
+                        NAS-Identifier
 ````
